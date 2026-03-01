@@ -25,7 +25,7 @@ public class HexadecimalAddition{
         int carry=0;
         int i=hex1.length()-1;
         int j=hex2.length()-1;
-        while(i>=0 && j>=0){
+        while(i>=0 || j>=0 || carry!=0){
             sum=carry;
             if(i>=0){
                 sum=sum+getvalue(hex1.charAt(i));
